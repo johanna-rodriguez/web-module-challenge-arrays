@@ -47,11 +47,11 @@ Use the copy function below to do the following:
 
 function copy(array){
     const newArray = array
-    return newArray
+    return newArray;
 
 }    
 
-console.log(copy(originalFlavors))
+console.log(copy(originalFlavors));
 
 
 
@@ -68,13 +68,13 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 function is31Flavors(array){
    if(array.length === 31){
-       return true
+       return true;
    }else{
-       return false
+       return false;
    }
 }
 
-console.log(copy(originalFlavors))
+console.log(copy(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -89,9 +89,13 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(array, newFlavor){
+    array.unshift(newFlavor)
+    return array;
+   
 }
+
+console.log(addFlavor(originalFlavors, 'Rainbow Sherbert'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -105,10 +109,12 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(array){
+    array.pop(array)
+    return array;
 }
 
+console.log(removeLastFlavor(originalFlavors));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
