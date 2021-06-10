@@ -110,7 +110,7 @@ Use the removeLastFlavor function below to do the following:
 */
 
 function removeLastFlavor(array){
-    array.pop(array)
+    array.pop()
     return array;
 }
 
@@ -128,9 +128,11 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(array,number){
+    return array[number];
 }
+
+console.log("task 5 " +getFlavorByIndex(originalFlavors, 2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
