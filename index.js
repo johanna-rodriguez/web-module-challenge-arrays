@@ -32,7 +32,7 @@ const originalFlavors = [
     "Rocky Road",
     "Strawberry",
     "Vanilla",
-    "Vanilla Burnt Almond"
+    "Vanilla Burnt Almond",
 ]
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: Copy the Array! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -132,7 +132,7 @@ function getFlavorByIndex(array,number){
     return array[number];
 }
 
-console.log("task 5 " +getFlavorByIndex(originalFlavors, 2))
+console.log("task 5", getFlavorByIndex(originalFlavors, 2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -150,11 +150,17 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(array,flavor){
+    const arrayLength = array.length
+    for (let i=0; i < arrayLength; i++){  
+        if( array[i]===flavor){
+            array.splice(i,1)
+        }
+    }
+    return array 
 }
 
-
+console.log('task 6:', removeFlavorByName(originalFlavors,"Vanilla"))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
